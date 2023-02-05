@@ -28,7 +28,7 @@ total = Number(product.price) + taxTotal + shipping;
 class Result {
     productName: string;
     shippingAddress: string;
-    producePrice: number;
+    productPrice: number;
     taxTotal: number;
     shipping: number;
     total: number;
@@ -37,14 +37,14 @@ class Result {
     constructor(productName: string, shippingAddress: string, productPrice: number, taxTotal: number, shipping: number, total: number) {
         this.productName = productName;
         this.shippingAddress = shippingAddress;
-        this.producePrice = productPrice;
+        this.productPrice = productPrice;
         this.taxTotal = taxTotal;
         this.total = total;
         this.shipping = shipping;
     }
 
     print() {
-        console.log(`Product name: ${this.productName}\nShipping address: ${this.shippingAddress}\nPrice of the product: ${product.price}$\nTax total: ${taxTotal}$\nShipping: ${shipping}$\nTotal amount: ${total}$`)
+        console.log(`Product name: ${this.productName}\nShipping address: ${this.shippingAddress}\nPrice of the product: ${this.productPrice}$\nTax total: ${this.taxTotal}$\nShipping: ${this.shipping}$\nTotal amount: ${this.total}$`)
     }
 }
 
